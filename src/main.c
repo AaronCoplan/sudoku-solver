@@ -75,15 +75,14 @@ int main(int argc, char** argv){
                 last_unsolved = num_unsolved;
         }
 
-
-
         // fix for when it gets stuck
         if(exit_code == -1){
                 // enter some other algorithm, most likely a brute force solution using backtracking
                 printf("Got stuck using intelligent algorithm, entering brute force now...\n");
+                sudokuSolver();
         }
 
-        printf("Finished!\n");
+        printf("Finished\n");
 
         gettimeofday(&end_time, NULL);
 

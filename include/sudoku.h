@@ -1,6 +1,9 @@
 #ifndef SUDOKU_H
 #define SUDOKU_H
 
+
+extern int** sudoku;
+
 void allocate_sudoku(void);
 void populate_values(char* file_path);
 void free_sudoku(void);
